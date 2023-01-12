@@ -14,7 +14,7 @@ export function counterApp(state = initialState, action) {
                 counter: state.counter - 1
             }
         case RESET_COUNTER:
-            return {counter: 100}
+            return {counter: 0}
         default:
             return state
     }

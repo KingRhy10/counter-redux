@@ -17,7 +17,7 @@ class Counter extends Component {
     }
 
     reset = () => {
-        this
+        this 
             .props
             .dispatch({type: RESET_COUNTER})
     }
@@ -29,7 +29,7 @@ class Counter extends Component {
                 <br></br>
                 <button type="button" className="btn btn-outline-danger" onClick={this.less}>SUBSTRACT -</button>
                 <br></br>
-                <button type="button" className="btn btn-outline-dark" onClick={this.reset}>reset counter to 100</button>
+                <button type="button" className="btn btn-outline-dark" onClick={this.reset}>reset counter to 0</button>
                 <br></br>
                 <br></br>
                 <h1>
@@ -44,3 +44,4 @@ const mapStateToProps = state => ({count: state.counterApp.counter})
 
 //connect function INJECTS dispatch function as a prop!!
 export default connect(mapStateToProps)(Counter);
+
